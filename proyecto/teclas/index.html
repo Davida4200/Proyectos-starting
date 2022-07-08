@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dibujando con flechas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lienzo como cualquier otro lienzo</h1>
+    <div class="father">
+        <div class="canvas"><canvas width="500" height="500" id="lienzo"></canvas></div><br>
+        <div class="father_buttons">
+            <input type="range" id="grosor" oninput="defgrosor(this.value);" min="1" max="10" value="1">
+            <div class="buttons" id="main_color_button"><input type="color" id="rgb" oninput="defcolor(this.value);"></div>
+            <div class="buttons" id="button_color2"><input type="button" id="rgb"></div>
+            <div class="buttons" id="button_color3"><input type="button" id="rgb"></div>
+            <div class="buttons" id="button_color4"><input type="button" id="rgb"></div>
+            <div class="buttons" id="button_color5"><input type="button" id="rgb"></div>
+            <div class="buttons" id="clean_button"><button class="clean_button" id="clean_button"><span>Clean</span></button></div>
+        </div>
+    </div>
+    <p>Mueve las flechas del teclado para dibujar</p>
+    <script src="eventos.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dibujando con canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="titulo">Dibujo en canvas</h1>
+    <div id="container" class="cajitaPrincipal">
+        <div class="cajita1">
+            <div class="pFirst">Elige una forma para tu lienzo</div>
+            <input type="button" value="estrella" id="estrella">
+            <input type="button" value="marco" id="marco">
+            <input type="button" value="ojo" id="ojo">
+            <input type="button" value="clasico" id="clasico">
+        </div>
+        <div class="cajita2">
+            <div class="pLast">Cuantas líneas quieres</div>
+            <input type="text" id="txt_lineas">
+            <input type="button" value="enviar" id="botoncito">
+        </div>
+    </div>
+    <div class="papel"><canvas width="500" height="500" id="dibujito"></canvas></div>
+    <script src="dibujo.js"></script>
+</body>
+</html>
